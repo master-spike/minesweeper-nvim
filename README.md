@@ -9,7 +9,7 @@ The plugin now has the initial playable scaffold:
 - `:Minesweeper` opens a floating window
 - `:Minesweeper reset` starts a fresh board
 - `h`, `j`, `k`, `l` move the selection
-- `<Enter>` reveals a square
+- `<space>` reveals a square
 - `f` toggles a flag
 - `q` hides the window without destroying the current game session
 
