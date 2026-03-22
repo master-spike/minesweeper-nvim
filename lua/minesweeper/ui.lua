@@ -191,7 +191,7 @@ local function ensure_keymaps(state)
 		state.actions.move(0, 1)
 	end, options)
 
-	vim.keymap.set("n", "<CR>", function()
+	vim.keymap.set("n", "<space>", function()
 		state.actions.reveal()
 	end, options)
 
