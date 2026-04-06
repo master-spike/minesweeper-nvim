@@ -54,7 +54,7 @@ end
 local function header_lines(game)
 	return {
 		string.format(
-			" Minesweeper  %dx%d  mines:%d  flags:%d  remaining:%d  status:%s ",
+			" Minesweeper  %-2dx%-2d  mines:%-2d  flags:%-2d  remaining:%-2d  status:%-8s ",
 			game.width,
 			game.height,
 			game.mine_count,
