@@ -12,6 +12,7 @@ The plugin now has the initial playable scaffold:
 - `<space>` reveals a square
 - `f` toggles a flag
 - `q` hides the window without destroying the current game session
+- `r` resets the board (equivalent to `:Minesweeper reset`)
 
 The current session lives in Lua module state, so reopening `:Minesweeper`
 restores the same board until you reset it.

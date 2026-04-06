@@ -62,7 +62,7 @@ local function header_lines(game)
 			game:remaining_mines(),
 			board_status(game)
 		),
-		" h/j/k/l move  <Enter> reveal  f flag  q hide  :Minesweeper reset starts a new board ",
+		" h/j/k/l move  <Enter> reveal  f flag  q hide  r reset ",
 	}
 end
 
@@ -201,6 +201,10 @@ local function ensure_keymaps(state)
 
 	vim.keymap.set("n", "q", function()
 		state.actions.hide()
+	end, options)
+
+	vim.keymap.set("n", "r", function()
+		state.actions.reset()
 	end, options)
 
 	state.keymaps_set = true

@@ -146,6 +146,9 @@ state.actions = {
 	hide = function()
 		M.hide()
 	end,
+	reset = function()
+		M.reset()
+	end,
 }
 
 return M
